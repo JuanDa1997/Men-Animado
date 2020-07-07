@@ -27,20 +27,15 @@
 	background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
     -webkit-animation: text;
     animation: text;
 
 /* Animate Background Image */
 
     -webkit-text-fill-color: transparent;
+    color: transparent;
     -webkit-animation:aitf 80s linear infinite;
 	animation: aitf 80s linear infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
-	transform: translate3d(0,0,0);
-	backface-visibility: hidden;
 }
 
 
