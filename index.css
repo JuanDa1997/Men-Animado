@@ -1,10 +1,11 @@
+
 /* Main styles */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
 
-
 .box-with-text {
-  background-image: -webkit-linear-gradient(crimson 50%, white 50%);
-  background-repeat: repeat;
+  background-image: -webkit-linear-gradient(rgb(255, 153, 37) 50%, white 50%);
+
+  background-repeat: repeat-y;
   background-position: 0 0;
   background-size: 100% 50px;
   -webkit-text-fill-color: transparent;
@@ -13,18 +14,25 @@
   color: transparent;
   -webkit-animation: stripes 2s linear infinite;
   animation: stripes 2s linear infinite;
+  display: block;
+	margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+
 }
 
 @-webkit-keyframes stripes {
-  100% {
+  0% {
     background-position: 0 -50px;
   }
+
+
 }
 
 @keyframes stripes {
-  100% {
+  0% {
     background-position: 0 -50px;
   }
+ 
 }
 /* Other stuff */
 body {
@@ -40,7 +48,7 @@ body {
   white-space: nowrap;
   text-align: center;
   text-transform: uppercase;
-  font: bold 26vmax/.8 Open Sans, Impact;
+  font: bold 5vmax/.8 Open Sans, Impact;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
